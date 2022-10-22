@@ -1,13 +1,9 @@
 module.exports = {
+    CONNLIMIT:100,
     HOST: "db4free.net",
+    PORT: 3306,
     USER: "restapitest123",
     PASSWORD: "restapitest123",
     DB: "restapitest123",
-    dialect: "mysql",
-    pool: {
-      max: 5,
-      min: 0,
-      acquire: 30000,
-      idle: 10000
-    }
-  };
+    PAGESIZE:10 
+};
