@@ -1,7 +1,27 @@
 
 const utilities = require("../utilities/utilities")
 
+exports.fetchCount = function (req, res, next) {
+    utilities.getConnection(
+        function (err, client) {
+            if (err) {
+                next(err)
+            } else {
+                client.query('SELECT count(*) FROM programming_languages', function (err, rows) {
+                    // And done with the connection.
+                    if (err) {
+                        console.log('Query Error');
+                        next(err);
+                    }
+                    
+                    res.json(rows);
+                    client.release();
 
+                    // Don't use the connection here, it has been returned to the pool.
+                });
+            }
+        });
+}
 exports.fetchPage = function (req, res, next) {
     utilities.getConnection(
         function (err, client) {
@@ -51,7 +71,6 @@ exports.createEntry = function (req, res, next) {
             }
         });
 }
-
 exports.updateEntry = function (req, res, next) {
     utilities.getConnection(
         function (err, client) {
