@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(requestLogger);
-app.use(router);
+app.use("/languages",router);
 app.use(errorLogger);
 
 //listening on 8080 port
