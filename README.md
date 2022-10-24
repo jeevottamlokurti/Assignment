@@ -10,19 +10,19 @@
 |:----|:-------------|
 | src \                 |  |
 | ┣ configs             |    |
-| ┃ ┗ db.config.js |          --config file that holds db and other configeration. |
+| ┃ ┗ db.config.js |          Config file that holds db and other configeration. |
 | ┣ middlewares         |               |
-| ┃ ┣ errorLogger.js     |    --script to log errors that occure in backend. |
-| ┃ ┗ requestLogger.js    |   --script to log requests that come to backend. |
+| ┃ ┣ errorLogger.js     |    Script to log errors that occure in backend. |
+| ┃ ┗ requestLogger.js    |   Script to log requests that come to backend. |
 | ┣ routes                 |                |
-| ┃ ┗ routing.js            | --route file that handled allendpoints. |
+| ┃ ┗ routing.js            | Route file that handled allendpoints. |
 | ┣ services                |                                           |
-| ┃ ┗ languageServices.js    | --services file that has bussiness logics of get put post and delete. |
+| ┃ ┗ languageServices.js    | Services file that has bussiness logics of get put post and delete. |
 | ┣ utilities               |                                                                       |
-| ┃ ┗ utilities.js          | --utilities like connecting to server and pagination of response. |
-| ┣ app.js                   | --server script. |
-| ┣ errorLogger.txt          | --generated error logs from middleware. |
-| ┗ requestLogger.txt        | --generated request logs from middleware. |
+| ┃ ┗ utilities.js          | Utilities like connecting to server and pagination of response. |
+| ┣ app.js                   | Server script. |
+| ┣ errorLogger.txt          | Generated error logs from middleware. |
+| ┗ requestLogger.txt        | Generated request logs from middleware. |
 
 ## Project setup
 > git clone https://github.com/jeevottamlokurti/Assignment.git
