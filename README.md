@@ -10,7 +10,7 @@
 ### Node.js Server
 
 #### Moving to project folder
-> cd Assignment
+> cd Assignment/src
 
 #### Installing backend dependencies
 > npm i
