@@ -7,21 +7,21 @@
 
 ## Folder Structure of Server
 
-src
- ┣ configs
- ┃ ┗ db.config.js
- ┣ middlewares
- ┃ ┣ errorLogger.js
- ┃ ┗ requestLogger.js
- ┣ routes
- ┃ ┗ routing.js
- ┣ services
- ┃ ┗ languageServices.js
- ┣ utilities
- ┃ ┗ utilities.js
- ┣ app.js
- ┣ errorLogger.txt
- ┗ requestLogger.txt
+src \
+ ┣ configs \
+ ┃ ┗ db.config.js \
+ ┣ middlewares \
+ ┃ ┣ errorLogger.js \
+ ┃ ┗ requestLogger.js \
+ ┣ routes \
+ ┃ ┗ routing.js \
+ ┣ services \
+ ┃ ┗ languageServices.js \
+ ┣ utilities \
+ ┃ ┗ utilities.js \
+ ┣ app.js \
+ ┣ errorLogger.txt \
+ ┗ requestLogger.txt \
 
 ## Project setup
 > git clone https://github.com/jeevottamlokurti/Assignment.git
