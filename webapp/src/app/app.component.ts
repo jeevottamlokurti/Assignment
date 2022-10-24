@@ -40,7 +40,7 @@ export class AppComponent {
       this.messageService.add({key: 'c',severity:'success', summary:'Record Deleted!', detail:`${id} record is deleted.`});
       this.paginate(this.currentPage);
     },(err)=>{
-      this.messageService.add({key: 'c',severity:'danger', summary:'Record Deletion Failed', detail:`${id} record is not deleted.`});
+      this.messageService.add({key: 'c',severity:'error', summary:'Record Deletion Failed', detail:`${id} record is not deleted. Might be already deleted kindly refresh!`});
     })
   }
  
