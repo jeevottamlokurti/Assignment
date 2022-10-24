@@ -7,10 +7,10 @@
 
 ## Folder Structure of Server
 | Folder | Description |
-|:----|-------------:|
+|:----|:-------------|
 | src \                 |  |
 | ┣ configs             |    |
-| ┃ ┗ db.config.js |    |      --config file that holds db and other configeration. |
+| ┃ ┗ db.config.js |          --config file that holds db and other configeration. |
 | ┣ middlewares         |               |
 | ┃ ┣ errorLogger.js     |    --script to log errors that occure in backend. |
 | ┃ ┗ requestLogger.js    |   --script to log requests that come to backend. |
