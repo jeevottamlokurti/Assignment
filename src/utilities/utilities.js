@@ -21,8 +21,8 @@ exports.paginator = (page, row) => {
 }
 
 //function is used for making DB cnnection
-exports.getConnection = function (callback) {
-    pool.getConnection(function (err, conn) {
+exports.getConnection =  (callback)=> {
+    pool.getConnection( (err, conn) =>{
         if (err) {
             return callback(err);
         }
