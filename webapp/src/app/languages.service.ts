@@ -8,15 +8,15 @@ export class LanguagesService {
   constructor(private http:HttpClient) { }
 
   fetchCount(){
-    let url=`http://localhost:8080/count`
+    let url=`http://localhost:8080/languages/count`
     return this.http.get(url);
   }
   fetchPage(page:number){
-    let url=`http://localhost:8080/?page=${page}`
+    let url=`http://localhost:8080/languages/?page=${page}`
     return this.http.get(url);
   }
   deleteRecord(id:number){
-    let url=`http://localhost:8080/${id}`
+    let url=`http://localhost:8080/languages/${id}`
     return this.http.delete(url)
   }
 }
